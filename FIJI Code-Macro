@@ -17,9 +17,11 @@ Dialog.show();
 nb = Dialog.getNumber();
 W = getWidth();
 H =getHeight();
-bounding= W/nb
+bounding= (W/nb);
+bounding=round(bounding);
 selectWindow("Area");
 for (i = 0;  i< nb; i++) {
+	
 	makeRectangle(i*bounding,0 , bounding, H);
 	roiManager("add");
 }
